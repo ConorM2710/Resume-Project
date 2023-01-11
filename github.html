@@ -1,64 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-    <script src="https://kit.fontawesome.com/a4818fe36d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/github-information.js"></script>
     <title>Rosie</title>
 </head>
+
 <body>
     <header>
         <div class="row no-gutters">
-            <a class="col-md-4 logo" href="index.html"></a>
+            <a href="index.html" class="col-md-4 logo">
+                
+            </a>
             <div class="col-md-8">
                 <div class="row no-gutters bg-color-name-title">
                     <div class="col heading">
                         <h1 class="name">Rosie Odenkirk</h1>
-                        <h2 class="title"> Full Stack Developer</h2>
+                        <h2 class="title">Full Stack Developer</h2>
                     </div>
                 </div>
                 <div class="row no-gutters">
                     <div class="col">
                         <ul id="nav" class="list-inline menucontainer row">
-                            <li class="col-6 col-sm-3 ui-menu-color-home menuitem">
+                            <li class="col-6 col-sm-2 ui-menu-color-home list-inline-item menuitem">
                                 <a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
                             </li>
-                            <li class="col-6 col-sm-3 ui-menu-color-resume menuitem">
+                            <li class="col-6 col-sm-2 ui-menu-color-resume list-inline-item menuitem">
                                 <a href="resume.html" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
                             </li>
-                            <li class="col-6 col-sm-3 ui-menu-color-contact menuitem">
+                            <li class="col-6 col-sm-2 ui-menu-color-contact list-inline-item menuitem">
                                 <a href="contact.html" class="hvr-sweep-to-bottom"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a>
                             </li>
-                            <li class="col-6 col-sm-3 ui-menu-color-download menuitem">
+                            <li class="col-6 col-sm-2 ui-menu-color-interests list-inline-item menuitem">
+                                <a href="interests.html" class="hvr-sweep-to-bottom"><i class="fa fa-users" aria-hidden="true"></i><span>Interests</span></a>
+                            </li>
+                            <li class="col-6 col-sm-2 ui-menu-color-github list-inline-item menuitem">
+                                <a href="github.html" class="hvr-sweep-to-bottom"><i class="fa fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+                            </li>
+                            <li class="col-6 col-sm-2 ui-menu-color-download list-inline-item menuitem">
                                 <a href="assets/cv/sample-cv.pdf" target="_blank" class="hvr-sweep-to-bottom"><i class="fa fa-download" aria-hidden="true"></i><span>Download CV</span></a>
                             </li>
                         </ul>
                     </div>
                 </div>
+
             </div>
         </div>
     </header>
     <section class="container-fluid">
         <div class="row bg-color-contact">
             <div class="col">
-                <h3 class="contact-heading uppercase text-center">Got a project in mind?</h3>
-                <h5 class="uppercase text-center">Let's work together!</h5>
+                <h3 class="contact-heading uppercase text-center">View My GitHub Projects</h3>
+                <h5 class="uppercase text-center">You can also search on other user profiles</h5>
 
                 <div class="center-form">
-                    <form>
-                        <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
-                        <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required />
-                        <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control" placeholder="Project description" required></textarea>
-                        <div class="form-row text-center">
-                            <div class="col">
-                                <button type="submit" class="btn btn-secondary">Send Project Request</button>
-                            </div>
-                        </div>
-                    </form>
+                    <input type="text" id="gh-username" value="octocat" oninput="fetchGitHubInformation()" />
+                    <div id="gh-user-data"></div>
+                    <div id="gh-repo-data"></div>
+
                 </div>
 
             </div>
@@ -125,6 +133,8 @@
                 </ul>
             </div>
         </div>
+
     </footer>
 </body>
+
 </html>

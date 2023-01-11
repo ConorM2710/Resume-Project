@@ -1,128 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rosie Odenkirk</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Rosie</title>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 </head>
+
 <body>
     <header>
         <div class="row no-gutters">
-            <a class="col-md-4 logo" href="02-index.html"></a>
+            <a href="index.html" class="col-md-4 logo">
+                
+            </a>
             <div class="col-md-8">
                 <div class="row no-gutters bg-color-name-title">
                     <div class="col heading">
                         <h1 class="name">Rosie Odenkirk</h1>
-                        <h2 class="title"> Full Stack Developer</h2>
+                        <h2 class="title">Full Stack Developer</h2>
                     </div>
                 </div>
                 <div class="row no-gutters">
                     <div class="col">
                         <ul id="nav" class="list-inline menucontainer row">
-                            <li class="col-xs-6 col-sm-2 ui-menu-color-home menuitem">
+                            <li class="col-6 col-sm-2 ui-menu-color-home menuitem">
                                 <a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
                             </li>
-                            <li class="col-xs-6 col-sm-2 ui-menu-color-resume menuitem">
+                            <li class="col-6 col-sm-2 ui-menu-color-resume menuitem">
                                 <a href="resume.html" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
                             </li>
-                            <li class="col-xs-6 col-sm-2 ui-menu-color-contact menuitem">
-                                <a href="contact.html" class="hvr-sweep-to-bottom"><i class=" fa fa-commenting-o" aria-hidden="true"></i><span>Contact</span></a>
+                            <li class="col-6 col-sm-2 ui-menu-color-contact menuitem">
+                                <a href="contact.html" class="hvr-sweep-to-bottom"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a>
                             </li>
-                            <li class="col-xs-6 col-sm-2 ui-menu-color-interests menuitem">
+                            <li class="col-6 col-sm-2 ui-menu-color-interests menuitem">
                                 <a href="interests.html" class="hvr-sweep-to-bottom"><i class="fa fa-users" aria-hidden="true"></i><span>Interests</span></a>
                             </li>
-                            <li class="col-xs-6 col-sm-2 ui-menu-color-github menuitem">
+                            <li class="col-6 col-sm-2 ui-menu-color-github menuitem">
                                 <a href="github.html" class="hvr-sweep-to-bottom"><i class="fa fa-github" aria-hidden="true"></i><span>GitHub</span></a>
                             </li>
-                            <li class="col-xs-6 col-sm-2 ui-menu-color-download menuitem">
+                            <li class="col-6 col-sm-2 ui-menu-color-download menuitem">
                                 <a href="assets/cv/sample-cv.pdf" target="_blank" class="hvr-sweep-to-bottom"><i class="fa fa-download" aria-hidden="true"></i><span>Download CV</span></a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>
     </header>
     <section class="container-fluid">
         <div class="row">
-            <div class="col-md-4 bg-color-personal-info section-column">
+            <div class="col-md-4 bg-color-conferences section-column">
                 <div class="row">
                     <div class="col-12">
                         <h3 class="section-heading uppercase">
-                            Personal Info
+                            Conferences And Meetups Attended
                         </h3>
                     </div>
                 </div>
-                <div class="personal-info-item">
-                    <div class="key">
-                        <p class="uppercase">
-                            Name:
-                        </p>
-                    </div>
-                    <div class="value">
-                        <p>
-                            Rosie Odenkirk
-                        </p>
-                    </div>
-                </div>
-                <div class="personal-info-item">
-                    <div class="key">
-                        <p class="uppercase">
-                            Address:
-                        </p>
-                    </div>
-                    <div class="value">
-                        <p>
-                            17 Riverdale, Catskills, NY USA
-                        </p>
-                    </div>
-                </div>
-                <div class="personal-info-item">
-                    <div class="key">
-                        <p class="uppercase">
-                            Phone:
-                        </p>
-                    </div>
-                    <div class="value">
-                        <p>
-                            555 204 1973
-                        </p>
-                    </div>
-                </div>
-                <div class="personal-info-item">
-                    <div class="key">
-                        <p class="uppercase">
-                            Email:
-                        </p>
-                    </div>
-                    <div class="value">
-                        <p>
-                            rosie.odenkirk@hansaw.com
-                        </p>
-                    </div>
-                </div>
+                <div id="map"></div>
             </div>
-            <div class="col-md-8 bg-color-three-reasons section-column">
+            <div class="col-md-8 bg-color-groups">
                 <div class="row">
                     <div class="col">
-                        <h3 class="section-heading uppercase">About Me</h3>
+                        <h3 class="section-heading uppercase">My Groups And Societies</h3>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
                         <div class="row">
                             <div class="col-2">
-                                <i class="three-reasons-icon fa fa-question" aria-hidden="true"></i>
+                                <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
                             </div>
                             <div class="col-10">
-                                <h4 class="three-reasons-heading uppercase">What do I do?</h4>
+                                <h4 class="three-reasons-heading uppercase">Coding Grace</h4>
                                 <p>
-                                    I'm a skilled Full Stack Developer with a wealth of diverse life and technical experience that I bring to every project.
+                                    Coding Grace are a group of developers based in Ireland who love to code and do other geeky and not necessarily crafty activities. Some of us code full-time, or just for fun (or both). We have people who are part of other technical user groups such as
+                                    Dublin ALT.NET, GameCraft, Python Ireland, Ruby Ireland and more.
+                                    <a href="https://codinggrace.com/" target="_blank">Coding Grace</a>
                                 </p>
                             </div>
                         </div>
@@ -130,12 +88,14 @@
                     <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
                         <div class="row">
                             <div class="col-2">
-                                <i class="three-reasons-icon fa fa-thumbs-up" aria-hidden="true"></i>
+                                <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
                             </div>
                             <div class="col-10">
-                                <h4 class="three-reasons-heading uppercase">How do I do it?</h4>
+                                <h4 class="three-reasons-heading uppercase">Django Girls</h4>
                                 <p>
-                                    I follow form as well as function. I know that the aesthetics of effective design combined with application speed, security and reliability combine to create a great user experience.
+                                    Django Girls is a non-profit organization and a community that empowers and helps women to organize free, one-day programming workshops by providing tools, resources and support. We are a volunteer run organization with hundreds of people contributing
+                                    to bring more amazing women into the world of technology.
+                                    <a href="https://djangogirls.org/" target="_blank">Django Girls</a>
                                 </p>
                             </div>
                         </div>
@@ -143,12 +103,29 @@
                     <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
                         <div class="row">
                             <div class="col-2">
-                                <i class="three-reasons-icon fa fa-bolt" aria-hidden="true"></i>
+                                <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
                             </div>
                             <div class="col-10">
-                                <h4 class="three-reasons-heading uppercase">Why hire me?</h4>
+                                <h4 class="three-reasons-heading uppercase">Full Stack NY</h4>
                                 <p>
-                                    I work quickly and effectively in getting things built and working across the stack. I'm an excellent communicator who thrives in bright and enthusiastic teams and I'm also a self starter when working solo.
+                                    Our meetup is an event where web designers and developers can come together to learn from and teach each other about emerging technologies. While speakers at Full Stack focus primarily on angularjs, react, node, hapiJS, espress, plain ole' JavaScript,
+                                    HTML, and CSS, we encourage all local web professionals to join us for vivid discussions around technology across the stack in any language.
+                                    <a href="https://www.meetup.com/javascript-full-stack-development/" target="_blank">Full Stack NY</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">IoT Nation</h4>
+                                <p>
+                                    IoT Nation's mission is to inspire, engage, and connect entrepreneurs, investors, professionals, & enthusiasts worldwide who are active in the Internet of Things (IoT). This group is for professionals and enthusiasts in the Internet of Things. We welcome
+                                    those who want to learn about this emerging field which is fascinating as IoT makes use of a diverse range of technologies and has the promise to impact a vast number of vertical markets.
+                                    <a href="https://www.meetup.com/NYCIOT/" target="_blank">IoT Nation</a>
                                 </p>
                             </div>
                         </div>
@@ -156,7 +133,6 @@
                 </div>
             </div>
         </div>
-        
     </section>
     <footer class="container-fluid">
         <div id="footer-details" class="row">
@@ -218,6 +194,11 @@
                 </ul>
             </div>
         </div>
+
     </footer>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&callback=initMap"></script>
+    <script src="assets/js/maps.js"></script>
 </body>
+
 </html>
